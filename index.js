@@ -109,7 +109,7 @@ function validateAnswer(currentQuestionIndex, answer) {
 
 function playQuiz() {
   username = readlineSync.question("Please enter your name: \n")
-  console.log("\n" + chalk.blueBright("Hello ") + chalk.white.bgBlue.bold(username) + chalk.blueBright("! Welcome to the DO YOU KNOW ME Quiz! \n"));
+  console.log("\n" + chalk.blueBright("Hello ") + chalk.white.bgBlue.bold(username) + chalk.blueBright("! Welcome to the " + chalk.white.bgRed("DO YOU KNOW ME") + " Quiz! \n"));
   for(questionIndex=0; questionIndex<questionArray.length; questionIndex++) {
     // console.log(questionArray[questionIndex].question);
     var userAnswer = readlineSync.question(questionArray[questionIndex].question);
